@@ -3,7 +3,7 @@ library(readr)
 library(leaflet)
 
 # List CSV files in directory
-file_list <- list.files("~/Spring2023/Weather/2020/", pattern = "\\.csv$", full.names = TRUE)
+file_list <- list.files("~/Spring2023/Weather/2020 Winter/", pattern = "\\.csv$", full.names = TRUE)
 
 # Extract file names without extension
 file_names <- tools::file_path_sans_ext(basename(file_list))
@@ -35,8 +35,8 @@ city_info <- data.frame(
 
 
 # Define UI for application
-ui <- fluidPage( 
-  titlePanel("SAMPLE Predicted Performance in the Summer of 2020"),
+ui <- fluidPage(
+  titlePanel("SAMPLE Predicted Performance in the Winter of 2020"),
   fluidRow(
     column(width = 4,
            # Dropdown menu for selecting cities
